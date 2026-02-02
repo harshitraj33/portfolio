@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+if DEBUG:
+    INSTALLED_APPS += ["django_browser_reload"]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -120,4 +122,5 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 NPM_BIN_PATH = r"C:/Program Files/nodejs/npm.cmd"
+
 
