@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-n^wa-h$z#62*2vip+k1$*gl3!ou7@1jkza0o*yw=uj$lvm(@xe'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 TAILWIND_APP_NAME = "theme"
 # Application definition
