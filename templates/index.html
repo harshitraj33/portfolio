@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% comment %} <!DOCTYPE html>
 <html lang="en">
 <head>  
     <meta charset="UTF-8">
@@ -39,4 +39,16 @@
         <p>&copy; 2024 My Portfolio</p>
     </footer>
 </body> 
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>USERS</h1>
+        <ul>
+        {% for x in users %}
+        <li>{{x.first_name }} {{x.last_name}}</li>
+        {% endfor %}
+        </ul>
+    </body>
 </html>
